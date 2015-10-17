@@ -1,6 +1,6 @@
 #ifndef REMIZY__H
 #define REMIZY__H
-#include <vector>;
+#include <vector>
 #include <iostream>
 class remizy {
 	std::vector<std::vector<int>> vec;
