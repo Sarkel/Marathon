@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "remizy"
 
 using namespace std;
 
@@ -19,8 +20,13 @@ int main(){
 			cout << "good" << endl;
 			//start
 				int N,M,K;
+				float a1,a2,a3;
 				plik >> N >> M >> K;
-				cout << N << " " << M << " " << K;
+				cout << N << " " << M << " " << K << endl;
+				plik >> a1 >> a2 >> a3;
+				cout <<  a1<< " " << a2 << " " << a3 << endl;
+
+				vector<vector<int>> map;
 			//koniec
 			plik.close();
 		}else cout << "not good " << endl;

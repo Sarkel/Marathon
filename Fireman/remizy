@@ -1,22 +1,23 @@
 #ifndef REMIZY__H
 #define REMIZY__H
-#include <vector>;
+#include <vector>
 #include <iostream>
+
 class remizy {
 	std::vector<std::vector<int>> vec;
 public:
 	remizy(int M, int N) {
 		for(int i=0; i<M; ++i){
-			std::vector<std::vector<int>> inner;
+			std::vector<int> inner;
 			for(int j=0; j<N; ++j){
 				inner.push_back(0);
 			}
-			this.vec.push_back(inner);
+			vec.push_back(inner);
 		}
 	}
 
 	void printVec(){
-		for(std::vector<int> v: this.vec){
+		for(std::vector<int> v: vec){
 			for(int l: v){
 				std::cout<<l<<' ';
 			}
