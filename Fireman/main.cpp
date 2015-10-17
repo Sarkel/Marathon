@@ -27,6 +27,9 @@ int main(){
 				cout <<  a1<< " " << a2 << " " << a3 << endl;
 
 				vector<vector<int>> map;
+
+				remizy RemizyMap;
+				RemizyMap.printVec();
 			//koniec
 			plik.close();
 		}else cout << "not good " << endl;
