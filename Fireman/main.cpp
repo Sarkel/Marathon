@@ -47,7 +47,7 @@ int main(){
 
 
 				remizy RemizyMap(N,M);
-				//remizyyyy
+				//remizaaa
 
 			//koniec
 			plik.close();
