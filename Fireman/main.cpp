@@ -20,16 +20,32 @@ int main(){
 			cout << "good" << endl;
 			//start
 				int N,M,K;
-				float a1,a2,a3;
+				float temp;
+				vector<vector<float>> map;
+
 				plik >> N >> M >> K;
 				cout << N << " " << M << " " << K << endl;
-				plik >> a1 >> a2 >> a3;
-				cout <<  a1<< " " << a2 << " " << a3 << endl;
 
-				vector<vector<int>> map;
+				for(int i = 0; i<N; ++i){
+					vector<float> inner;
+					for(int j = 0; j<M; ++j){
+						plik >> temp;
+						inner.push_back(temp);
+					}
+					map.push_back(inner);
+				}
 
-				remizy RemizyMap;
-				RemizyMap.printVec();
+				for(int i = 0; i<N; ++i){
+					for(int j = 0; j<M; ++j){
+					cout << map[i][j] << " ";
+					}
+					cout << endl;
+				}
+
+
+				remizy RemizyMap(N,M);
+
+				//RemizyMap.printVec();
 			//koniec
 			plik.close();
 		}else cout << "not good " << endl;
