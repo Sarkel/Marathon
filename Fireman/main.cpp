@@ -35,6 +35,9 @@ int main(){
 					map.push_back(inner);
 				}
 
+
+				for( int jj = 0 ; jj < 10; jj++){}					
+
 				for(int i = 0; i<N; ++i){
 					for(int j = 0; j<M; ++j){
 					cout << map[i][j] << " ";
