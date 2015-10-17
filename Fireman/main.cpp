@@ -44,14 +44,11 @@ int main(){
 
 
 				remizy RemizyMap(N,M);
+				//remizyyyy
 
-				//RemizyMap.printVec();
 			//koniec
 			plik.close();
 		}else cout << "not good " << endl;
 	}
 	return 0;
 }
-
-
-//komentarz
