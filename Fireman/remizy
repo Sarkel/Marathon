@@ -24,6 +24,11 @@ public:
 			std::cout<<std::endl;
 		}
 	}
+
+	void setRemize(int i, int j){
+		auto it = vac[j].begin()+j;
+		vec[i].insert(it, 1);
+	}
 };
 
 #endif
