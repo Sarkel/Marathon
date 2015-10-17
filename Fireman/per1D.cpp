@@ -20,5 +20,5 @@ void permutacje (int T[N], int ix) // ix = 0..N-1
     }
   }
   else out(T); // drukujemy wszystkie elementy
-
+//test
 }
